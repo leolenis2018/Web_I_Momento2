@@ -17,5 +17,5 @@ if (isset($_POST["botonEnvio"])) {
 
     $transaccion->agregarDatos($consultaSQL);
 
-   // header("location:formularioRegistro.php");
+    header("location:formularioRegistro.php");
 }

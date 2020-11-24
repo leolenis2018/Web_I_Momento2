@@ -13,7 +13,7 @@
 <body>
     <main>
         <div class="container">
-            <form action="registrar.php" method="POST">
+            <form action="registrarMotos.php" method="POST">
                 <h1>Registro de Motos</h1>
 
                 <div class="row">
@@ -50,7 +50,7 @@
             </form>
             <br>
             <div>
-                <a class="" href="listaUsuarios.php">Motos Disponibles</a>
+                <a class="" href="listaMotos.php">Motos Disponibles</a>
             </div>
         </div>
 
