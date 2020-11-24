@@ -57,14 +57,14 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="editarUsuario.php?id=<?php echo ($moto["id_moto"]) ?>" method="POST">
+                                    <form action="editarMotos.php?id=<?php echo ($moto["id_moto"]) ?>" method="POST">
                                         <div class="form-group">
                                             <label>Modelo</label>
                                             <input type="text" class="form-control" name="modeloEditar" value="<?php echo ($moto["modelo"]) ?>">
                                         </div>
                                         <div class="form-group">
                                             <label>Precio</label>
-                                            <textarea class="form-control" name="descripcionEditar" id="exampleFormControlTextarea1" rows="3"><?php echo ($moto["precio"]) ?> </textarea>
+                                            <textarea class="form-control" name="precioEditar" id="exampleFormControlTextarea1" rows="3"><?php echo ($moto["precio"]) ?> </textarea>
                                         </div>
                                         <div class="row mt-3">
                                             <div class="col">
