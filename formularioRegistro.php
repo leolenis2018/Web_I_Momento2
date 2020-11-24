@@ -14,7 +14,7 @@
     <main>
         <div class="container">
             <form action="registrarMotos.php" method="POST">
-                <h1>Registro de Motos</h1>
+                <h1>Registar Motos</h1>
 
                 <div class="row">
                     <div class="col">
