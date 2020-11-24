@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disponibles</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -38,8 +39,9 @@
                     <div class="card h-100">
                         <img src="<?php echo ($moto["foto"]) ?>" class="card-img-top" alt="imagen">
                         <div class="card-body">
-                            <h3 class="card-title"><?php echo ($moto["modelo"]) ?></h3>
-                            <p class="card-text"><?php echo ($moto["marca"]) ?></p>
+                            <h3 class="card-title"><?php echo ($moto["marca"]) ?></h3>
+                            <p class="card-text"><?php echo ($moto["descripcion"]) ?></p>
+                            <p class="card-text"><?php echo ($moto["precio"]) ?></p>
                             <a href="eliminarMotos.php?id=<?php echo ($moto["id_moto"]) ?>" class="btn btn-danger">Eliminar</a>
                             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#editar<?php echo ($moto["id_moto"]) ?>">
                                 Editar
@@ -59,12 +61,12 @@
                                 <div class="modal-body">
                                     <form action="editarMotos.php?id=<?php echo ($moto["id_moto"]) ?>" method="POST">
                                         <div class="form-group">
-                                            <label>Modelo</label>
-                                            <input type="text" class="form-control" name="modeloEditar" value="<?php echo ($moto["modelo"]) ?>">
+                                            <label>Precio</label>
+                                            <input type="text" class="form-control" name="precioEditar" value="<?php echo ($moto["precio"]) ?>">
                                         </div>
                                         <div class="form-group">
-                                            <label>Precio</label>
-                                            <textarea class="form-control" name="precioEditar" id="exampleFormControlTextarea1" rows="3"><?php echo ($moto["precio"]) ?> </textarea>
+                                            <label>Descripcion</label>
+                                            <input type="text" class="form-control" name="descripcionEditar" value="<?php echo ($moto["descripcion"]) ?>">
                                         </div>
                                         <div class="row mt-3">
                                             <div class="col">
@@ -87,9 +89,11 @@
             <?php endforeach ?>
         </div>
         <div class="">
-            <a href="formularioRegistro.php?id=<?php echo ($moto["id_moto"]) ?>" class="btn btn-danger">Agregar Nueva</a>
+            <a href="formularioRegistro.php?id=<?php echo ($moto["id_moto"]) ?>" class="btn btn-dark btn-lg btn-block">Agregar Nueva</a>
         </div>
     </div>
+
+    <footer> Derechos Reservados &copy;</footer>
 
 
 

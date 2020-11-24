@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Ruedas</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
@@ -26,7 +26,6 @@
                 </div>
 
                 <div class="row mt-3">
-
                     <div class="col">
                         <label class="font-weight-bold">Descripción:</label>
                         <textarea class="form-control" rows="4" name="descripcion"></textarea>
@@ -42,18 +41,19 @@
                 <div class="row mt-3">
                     <div class="col">
                         <label class="font-weight-bold">Foto:</label>
-                        <input type="text" class="form-control" placeholder="foto URL" name="foto">
+                        <input type="text" class="form-control" placeholder="Foto URL" name="foto">
                     </div>
+
                 </div>
                 <br>
                 <button type="submit" class="btn btn-primary btn-lg btn-block" name="botonEnvio">Registar</button>
             </form>
             <br>
-            <div>
-                <a class="" href="listaMotos.php">Motos Disponibles</a>
+            <div id="botones">
+                <a href="listaMotos.php" class="btn btn-dark btn-lg btn-block">Ver Todas</a>
             </div>
         </div>
-
+        <footer> Derechos Reservados &copy;</footer>
 
 
     </main>

@@ -1,4 +1,30 @@
-header {
-    border-top: 25px;
-    border-left: 50px;
+footer {
+    margin-top: 100px;
+    text-align: center;
+    color: ghostwhite;
+    background-color: rgb(44, 43, 43);
+}
+
+main {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+body {
+    background: linear-gradient(to right, #021933, #33AEFF, #05203f);
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.botones {
+    padding: 10px;
+    font-size: 20px;
+    color: #02010e;
+    background-color: #eebd1d;
+    border-radius: 15px;
+    border: 5px solid rgb(3, 9, 61);
 }
